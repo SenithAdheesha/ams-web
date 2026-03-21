@@ -3,19 +3,21 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
 
     <!--header-->
 
-   <section class="header">
+    <section class="header">
 
         <nav>
 
@@ -39,17 +41,41 @@
 
         </nav>
 
-        <div class="text-box">
 
-            <h1>Association of Medical Specialists</h1>
-            <p>Committed to delivering high-quality healthcare solutions and fostering <br> a community of excellence in the medical field.
-            </p>
+    </section>
 
-            <a href="" class="hero-btn">Visit Us To Know More</a>
+    <!-- -------about-------->
+
+    <section class="about" data-aos="fade-up">
+
+        
+
+        <!-- <hr> -->
+
+        <div class="row">
+
+            <div class="about-col">
+
+                <h1>President's Message</h1>
+                <h3>Dr ABC CDEF</h3>
+
+                <img src="images/blank-profile-picture.png" alt="">
+
+                <div class="pres-message">
+                    <p>Making website is now one of the easiest thing in the world. You just need to learn
+                        html, css,Javascript and you are good to go.Making website is now one of the easiest
+                        thing in the world. You just need to learn html, css,Javascript and you are good to
+                        go.Making website is now one of the easiest thing in the world. You just need to learn
+                        html, css,Javascript and you are good to go.</p>
+                </div>
+
+
+            </div>
 
         </div>
 
-    </section>
+    </section>  
+    
 
     <!-- -------JavaScript for Toggle Menue------ -->
 
@@ -66,6 +92,13 @@
         }
 
 
+    </script>
+
+
+    <!-- -------aos------ -->
+
+    <script>
+        AOS.init();
     </script>
 
 </body>
