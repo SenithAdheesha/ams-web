@@ -100,7 +100,14 @@ nav .fa {
     display: none;
 }
 
-@media(max-width:800px) {
+@media(max-width:950px){
+    .header {
+        min-height: 90vh;
+    }
+}
+
+
+@media(max-width:900px) {
     .header a img {
         display: none;
     }
@@ -183,7 +190,7 @@ nav .fa {
 
 /* -------about-------- */
 
-.about {
+/* .about {
     width: 60%;
     margin: auto;
     text-align: center;
@@ -193,15 +200,9 @@ nav .fa {
 .about-col h1 {
     font-size: 20px;
     font-weight: 600;
-}
-
-/* .about hr{
-    margin-top: 20px;
-    background-color: #f44336;
-    height: 1px;
-    border: none;
 } */
 
+/* 
 p {
     color: #777;
     font-size: 14px;
@@ -214,6 +215,7 @@ p {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about-col {
@@ -227,17 +229,17 @@ p {
 
 .about-col img {
     width: 20%;
-}
+} */
 
-.pres-message {
+/* .pres-message {
     max-width: 800px;
     margin: 0 auto;
-    /* centers the block */
+    
 }
 
 .pres-message p {
     text-align: justify;
-    /* justifies the text */
+    
 }
 
 h3 {
@@ -262,7 +264,78 @@ h3 {
     }
 
 
+} */
+
+
+
+
+/* president message */
+
+
+.president {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
 }
+
+/* CONTAINER */
+.pres-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* IMAGE */
+.pres-img {
+    flex: 1;
+}
+
+.pres-img img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+/* TEXT */
+.pres-text {
+    flex: 2;
+}
+
+.pres-text h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.pres-text p {
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.pres-text h3 {
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .pres-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pres-img img {
+        max-width: 250px;
+    }
+
+    .pres-text {
+        flex: 1;
+    }
+}
+
+
+
 
 
 
@@ -276,32 +349,88 @@ h3 {
     padding-top: 80px;
 }
 
+.facilities h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* CARD */
 .facilities-col {
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    transition: 0.3s;
 }
+
+.facilities-col:hover {
+    transform: translateY(-5px);
+}
+
 
 .facilities-col img {
     width: 100%;
-    border-radius: 10px;
+    height: 220px;
+    /* same height for all */
+    object-fit: cover;
+    /* keeps image nice */
+    border-radius: 10px 10px 0 0;
 }
 
-.facilities-col p {
-    padding: 0;
-}
 
 .facilities-col h3 {
     margin-top: 16px;
     margin-bottom: 15px;
-    text-align: center;
 }
 
-.btn-2{
-    background: #777;
-    margin-top: 35px;
+.facilities-col p {
+    padding: 0 15px;
+    font-size: 14px;
 }
+
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-2 {
+    background: #777;
+}
+
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .facilities-col {
+        flex-basis: 100%;
+    }
+
+    .facilities-col img {
+        height: 200px;
+    }
+}
+
+
+
+
+
 
 /* --------call to action-------- */
 
@@ -327,6 +456,10 @@ h3 {
         font-size: 24px;
     }
 }
+
+
+
+
 
 /* --------footer-------- */
 
